@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c069bb3b.css",
+    "main.js": "/portfolio/static/js/main.79828ec6.js",
+    "static/js/787.a5fa54f9.chunk.js": "/portfolio/static/js/787.a5fa54f9.chunk.js",
+    "static/media/avatar.png": "/portfolio/static/media/avatar.2b14156b63f3a94c4e75.png",
+    "static/media/about.png": "/portfolio/static/media/about.ece39a82458408891d2b.png",
+    "static/media/banner.jpg": "/portfolio/static/media/banner.d156d31199bf83df8e74.jpg",
+    "static/media/LeviReBrushed.woff": "/portfolio/static/media/LeviReBrushed.7d2cd5c12baf94cbb114.woff",
+    "static/media/Poppins-Regular.woff": "/portfolio/static/media/Poppins-Regular.387f9003f984ef1cec60.woff",
+    "static/media/Poppins-Light.woff": "/portfolio/static/media/Poppins-Light.6f5b7a1c94cb6419bec4.woff",
+    "static/media/Poppins-SemiBold.woff": "/portfolio/static/media/Poppins-SemiBold.71da8e4f0d76b718897c.woff",
+    "static/media/Poppins-Medium.woff": "/portfolio/static/media/Poppins-Medium.7e588a26bdac2428f240.woff",
+    "static/media/Poppins-Bold.woff": "/portfolio/static/media/Poppins-Bold.a6b628bdef91e927b77c.woff",
+    "static/media/Ak_logo.png": "/portfolio/static/media/Ak_logo.fcc52c1fba747ba82896.png",
+    "index.html": "/portfolio/index.html",
+    "main.c069bb3b.css.map": "/portfolio/static/css/main.c069bb3b.css.map",
+    "main.79828ec6.js.map": "/portfolio/static/js/main.79828ec6.js.map",
+    "787.a5fa54f9.chunk.js.map": "/portfolio/static/js/787.a5fa54f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c069bb3b.css",
+    "static/js/main.79828ec6.js"
+  ]
+}
