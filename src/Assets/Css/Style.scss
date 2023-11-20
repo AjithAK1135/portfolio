@@ -307,8 +307,8 @@ $orange: #f75023;
 .home_page {
       .banners {
             width: 100%;
-            background: url(../Images/banner.jpg) no-repeat right center;
-            background-size: cover;
+            background: url(../Images/banner.jpg) no-repeat center center #171c22;
+            background-size: contain;
             padding: 120px 0 50px;
 
             .ban_content {
@@ -321,7 +321,7 @@ $orange: #f75023;
                   }
 
                   h1 {
-                        font: 85px/100px $pb;
+                        font: 85px/100px $lrb;
                         color: $white;
                         margin-bottom: 20px;
                   }
@@ -497,14 +497,172 @@ $orange: #f75023;
 section#about {
       width: 100%;
       padding: 100px 0;
-      background: #20272f;
-      .abt_img {
-            width: 50%;
-            img {
-                  width: 100%;
-                  object-fit: contain;
-                  object-position: center;
+      background: #171c22;
+      .a_head {
+            width: 100%;
+            margin-bottom: 50px;
+            text-align: center;
+            h2 {
+                  font: 50px/50px $lrb;
+                  color: $orange;
+                  text-transform: uppercase;
+                  position: relative;
+                  display: inline-block;
+                  &::after {
+                        content: "";
+                        width: 35%;
+                        height: 3px;
+                        background: $white;
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: -10px;
+                        transform: translateX(-50%);
+                  }
+            }
+      }
+      .a_body {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .a_img {
+                  width: 50%;
+                  img {
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                  }
+            }
+            .a_txt {
+                  width: 50%;
+                  padding-left: 50px;
+                  .blk {
+                        width: 100%;
+                       &:not(:last-child) {
+                        margin-bottom: 30px;
+                       }
+                       h3 {
+                        font: 26px/30px $pr;
+                        color: $white;
+                        margin-bottom: 20px;
+                        span {
+                              color: $orange;
+                        }
+                       }
+                       p {
+                        font: 16px/30px $pr;
+                        color: $white;
+                       }
+                       h4 {
+                        font: 20px/26px $pb;
+                        color: $orange;
+                        margin-bottom: 20px;
+                       }
+                       ul {
+                        li {
+                              font: 16px/30px $pr;
+                              color: $white;
+                              &:not(:last-child) {
+                                    margin-bottom: 10px;
+                              }
+                              padding-left: 35px;
+                              background: url(../Images/check-mark.png) no-repeat left center;
+                              background-size: 22px;
+                        }
+                       }
+                  }
             }
       }
   }
 /*ABOUT US*/
+
+/*CONTACT*/
+section#contact {
+      width: 100%;
+      background: #171c22;
+      padding: 50px 0;
+      .c_head {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+            h2 {
+                  font: 50px/50px $lrb;
+                  color: $orange;
+                  text-transform: uppercase;
+                  position: relative;
+                  display: inline-block;
+                  &::after {
+                        content: "";
+                        width: 35%;
+                        height: 3px;
+                        background: $white;
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: -10px;
+                        transform: translateX(-50%);
+                  }
+            }
+      }
+      .c_body {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .c_img {
+                  width: 50%;
+                  img {
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                  }
+            }
+            .c_txt {
+                  width: 50%;
+                  padding-right: 50px;
+                  ul {
+                        li {
+                              font: 30px/40px $pl;
+                              color: $white;
+                              span {
+                                    display: block;
+                                    font-family: $pm;
+                                    color: $orange;
+                              }
+                              &:not(:last-child) {
+                                    margin-bottom: 25px;
+                              }
+                        }
+                  }
+            }
+      }
+}
+/*CONTACT*/
+
+
+/*FOOTER*/
+.footer {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background: $orange;
+      .ft_logo {
+            width: 100%;
+            margin-bottom: 20px;
+            img {
+                  max-width: 100px;
+                  object-fit: contain;
+                  object-position: center;
+            }
+      }
+      .ft_txt {
+            p {
+                  font: 16px/24px $pr;
+                  color: $white;
+                  letter-spacing: 5px;
+            }
+      }
+}
+
+/*FOOTER*/

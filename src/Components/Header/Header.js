@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import Logo from '../../Assets/Images/Ak_logo.png';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaTelegramPlane } from "react-icons/fa";
 
     
-export function Header() {
+const Header = () => {
 
       useEffect(() => {
             window.addEventListener('scroll', isSticky );
@@ -24,7 +23,7 @@ export function Header() {
                         <div className="flex">
                               <div className="logo">
                                     <a href="#">
-                                          <img src={Logo} alt="" />
+                                          <img src={require('../../Assets/Images/Ak_logo.png')} />
                                     </a>
                               </div>
                               <div className="menus">
@@ -37,14 +36,12 @@ export function Header() {
                                                       <a href="#">About</a>
                                                 </li>
                                                 <li>
-                                                      <a href="#">Portfolio</a>
+                                                      <a href="#">Skills</a>
                                                 </li>
                                                 <li>
                                                       <a href="#">Work</a>
                                                 </li>
-                                                <li>
-                                                      <a href="#">Blog</a>
-                                                </li> <li>
+                                                 <li>
                                                       <a href="#">Contact</a>
                                                 </li>
                                           </ul>
@@ -84,3 +81,5 @@ export function Header() {
             </div>
       );
 }
+
+export default Header;
