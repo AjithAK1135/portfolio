@@ -107,10 +107,10 @@ $orange: #f75023;
       position: fixed;
       left: 0;
       top: 0;
-      z-index: 1;
+      z-index: 10;
 
       &.is-sticky {
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             transition: 0.5s all ease-in-out;
       }
 
@@ -195,79 +195,22 @@ $orange: #f75023;
                         }
                   }
 
-                  .social_media {
+                  .download_cv {
                         ul {
-                              display: flex;
-                              align-items: center;
-                              justify-content: flex-end;
-
                               li {
-                                    &:not(:last-child) {
-                                          margin-right: 20px;
-                                    }
-
                                     a {
-                                          font-size: 20px;
-                                          width: 35px;
-                                          height: 35px;
-                                          display: flex;
-                                          align-items: center;
-                                          justify-content: center;
+                                          width: max-content;
+                                          display: block;
+                                          padding: 10px 25px;
+                                          color: $orange;
+                                          font: 16px/24px $pb;
+                                          text-transform: uppercase;
+                                          border: 1px solid $orange;
+                                          border-radius: 30px;
                                           transition: 0.5s all ease-in-out;
-                                          border-radius: 100%;
-                                          position: relative;
-                                          color: $white;
-                                          box-shadow: 0 0 5px 0 #2c2d32;
-
-                                          svg {
-                                                z-index: 1;
-                                          }
-
-                                          &::after {
-                                                content: '';
-                                                position: absolute;
-                                                top: 0;
-                                                bottom: 0;
-                                                left: 0;
-                                                right: 0;
-                                                margin: auto;
-                                                vertical-align: middle;
-                                                width: 100%;
-                                                height: 100%;
-                                                transform: scale(0);
-                                                background: $white;
-                                                border-radius: 100%;
-                                                z-index: 0;
-                                          }
-
-                                          &::before {
-                                                content: '';
-                                                position: absolute;
-                                                top: 0;
-                                                bottom: 0;
-                                                left: 0;
-                                                right: 0;
-                                                border-radius: 100%;
-                                                background: $orange;
-                                                z-index: 0;
-                                          }
-
                                           &:hover {
-                                                color: $orange;
-                                                animation-name: bubble2;
-                                                animation-duration: 0.5s;
-                                                animation-delay: 0.1s;
-                                                animation-fill-mode: forwards;
-
-                                                svg {
-                                                      color: $orange;
-                                                }
-
-                                                &::after {
-                                                      animation-name: bubble;
-                                                      animation-duration: 0.5s;
-                                                      animation-fill-mode: forwards;
-                                                }
+                                                background: $orange;
+                                                color: $white;
                                           }
                                     }
                               }
@@ -291,15 +234,17 @@ $orange: #f75023;
 
 @keyframes float {
       0% {
-        transform: translatey(0px);
+            transform: translatey(0px);
       }
+
       50% {
-        transform: translatey(-20px);
+            transform: translatey(-20px);
       }
+
       100% {
-        transform: translatey(0px);
+            transform: translatey(0px);
       }
-    }
+}
 
 /*HEADER*/
 
@@ -369,9 +314,11 @@ $orange: #f75023;
                   width: 42%;
                   text-align: right;
                   position: relative;
+
                   .ban_icons {
                         width: 100%;
                         height: 100%;
+
                         span.ban_icon {
                               width: 65px;
                               height: 65px;
@@ -385,26 +332,32 @@ $orange: #f75023;
                               align-items: center;
                               justify-content: center;
                               box-shadow: 0 0 10px 0 #708195;
+
                               &:first-child {
                                     top: 10%;
                                     left: 0;
                               }
+
                               &:nth-child(2) {
                                     top: 17%;
                                     right: 5%;
                               }
+
                               &:nth-child(3) {
                                     bottom: 20%;
                                     left: 10%;
                               }
+
                               &:nth-child(4) {
                                     bottom: 5%;
                                     right: 10%;
                               }
+
                               &:last-child {
                                     top: 45%;
                                     right: 20%;
                               }
+
                               img {
                                     width: 75%;
                                     height: auto;
@@ -415,10 +368,12 @@ $orange: #f75023;
                         }
                   }
             }
+
             .scroll_down {
                   width: 100%;
                   text-align: center;
                   position: relative;
+
                   .chevron {
                         position: absolute;
                         left: 49%;
@@ -428,13 +383,17 @@ $orange: #f75023;
                         opacity: 0;
                         transform: scale3d(0.5, 0.5, 0.5);
                         animation: move 3s ease-out infinite;
+
                         &:first-child {
                               animation: move 3s ease-out 1s infinite;
                         }
+
                         &:nth-child(2) {
                               animation: move 3s ease-out 2s infinite;
                         }
-                        &::before, &::after {
+
+                        &::before,
+                        &::after {
                               content: ' ';
                               position: absolute;
                               top: 0;
@@ -442,16 +401,19 @@ $orange: #f75023;
                               width: 51%;
                               background: #fff;
                         }
+
                         &::before {
                               left: 0;
                               transform: skew(0deg, 30deg);
                         }
+
                         &::after {
                               right: 0;
                               width: 50%;
                               transform: skew(0deg, -30deg);
                         }
                   }
+
                   .text {
                         display: block;
                         margin-top: 25px;
@@ -468,130 +430,151 @@ $orange: #f75023;
 
 @keyframes move {
       25% {
-        opacity: 1;
-    
-      }
-      33% {
-        opacity: 1;
-        transform: translateY(30px);
-      }
-      67% {
-        opacity: 1;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-      }
-    }
+            opacity: 1;
 
-    @keyframes pulse {
-      to {
-        opacity: 1;
       }
-    }
+
+      33% {
+            opacity: 1;
+            transform: translateY(30px);
+      }
+
+      67% {
+            opacity: 1;
+            transform: translateY(40px);
+      }
+
+      100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+}
+
+@keyframes pulse {
+      to {
+            opacity: 1;
+      }
+}
 
 /*HOME*/
 
 /*ABOUT US*/
 section#about {
       width: 100%;
-      padding: 100px 0;
-      background: #171c22;
+      padding: 150px 0;
+      position: relative;
+      // &::before {
+      //       content: "";
+      //       width: 50%;
+      //       height: 50%;
+      //       background: url(../Images/patternImg2.png) no-repeat left center;
+      //       position: absolute;
+      //       left: 0;
+      //       top: 0;
+      //       background-size: contain;
+      // }
+
       .a_head {
             width: 100%;
             margin-bottom: 50px;
             text-align: center;
+
             h2 {
                   font: 50px/50px $lrb;
                   color: $orange;
                   text-transform: uppercase;
                   position: relative;
                   display: inline-block;
-                  &::after {
-                        content: "";
-                        width: 35%;
-                        height: 3px;
-                        background: $white;
-                        border-radius: 10px;
-                        position: absolute;
-                        left: 50%;
-                        bottom: -10px;
-                        transform: translateX(-50%);
-                  }
             }
       }
+
       .a_body {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .a_img {
                   width: 50%;
+
                   img {
                         width: 100%;
                         object-fit: contain;
                         object-position: center;
                   }
             }
+
             .a_txt {
                   width: 50%;
                   padding-left: 50px;
+
                   .blk {
                         width: 100%;
-                       &:not(:last-child) {
-                        margin-bottom: 30px;
-                       }
-                       h3 {
-                        font: 26px/30px $pr;
-                        color: $white;
-                        margin-bottom: 20px;
-                        span {
-                              color: $orange;
+
+                        &:not(:last-child) {
+                              margin-bottom: 30px;
                         }
-                       }
-                       p {
-                        font: 16px/30px $pr;
-                        color: $white;
-                       }
-                       h4 {
-                        font: 20px/26px $pb;
-                        color: $orange;
-                        margin-bottom: 20px;
-                       }
-                       ul {
-                        li {
-                              font: 16px/30px $pr;
-                              color: $white;
-                              &:not(:last-child) {
-                                    margin-bottom: 10px;
+
+                        h3 {
+                              font: 26px/30px $pr;
+                              color: #1d333b;
+                              margin-bottom: 20px;
+
+                              span {
+                                    color: $orange;
                               }
-                              padding-left: 35px;
-                              background: url(../Images/check-mark.png) no-repeat left center;
-                              background-size: 22px;
                         }
-                       }
+
+                        p {
+                              font: 16px/30px $pr;
+                              color: #1d333b;
+                        }
+
+                        h4 {
+                              font: 20px/26px $pb;
+                              color: $orange;
+                              margin-bottom: 20px;
+                        }
+
+                        ul {
+                              li {
+                                    font: 16px/30px $pr;
+                                    color: #1d333b;
+
+                                    &:not(:last-child) {
+                                          margin-bottom: 10px;
+                                    }
+
+                                    padding-left: 35px;
+                                    background: url(../Images/check-mark.png) no-repeat left center;
+                                    background-size: 22px;
+                              }
+                        }
                   }
             }
       }
-  }
+}
+
 /*ABOUT US*/
 
 /*CONTACT*/
 section#contact {
       width: 100%;
-      background: #171c22;
-      padding: 50px 0;
+      // background: #171c22;
+      padding: 150px 0 100px;
+
       .c_head {
             width: 100%;
             text-align: center;
             margin-bottom: 50px;
+
             h2 {
                   font: 50px/50px $lrb;
                   color: $orange;
                   text-transform: uppercase;
                   position: relative;
                   display: inline-block;
+
                   &::after {
                         content: "";
                         width: 35%;
@@ -605,31 +588,38 @@ section#contact {
                   }
             }
       }
+
       .c_body {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .c_img {
                   width: 50%;
+
                   img {
                         width: 100%;
                         object-fit: contain;
                         object-position: center;
                   }
             }
+
             .c_txt {
                   width: 50%;
                   padding-right: 50px;
+
                   ul {
                         li {
                               font: 30px/40px $pl;
                               color: $white;
+
                               span {
                                     display: block;
                                     font-family: $pm;
                                     color: $orange;
                               }
+
                               &:not(:last-child) {
                                     margin-bottom: 25px;
                               }
@@ -638,8 +628,327 @@ section#contact {
             }
       }
 }
+
 /*CONTACT*/
 
+/*MY WORK*/
+section#my_work {
+      width: 100%;
+      padding: 150px 0;
+      background: url(../Images/mywork_bg.jpg) no-repeat center #171c22;
+      background-size: cover;
+      border-radius: 100px 0 100px 0;
+      position: relative;
+      &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 100px 0 100px 0;
+      }
+      span.top_bar {
+            width: 50%;
+            height: 24px;
+            background: $orange;
+            position: absolute;
+            top: -12px;
+            right: 0;
+      }
+      span.bot_bar {
+            width: 50%;
+            height: 24px;
+            background: $orange;
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+      }
+      .m_head {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 100px;
+            z-index: 1;
+            position: relative;
+            h2 {
+                  font: 50px/50px $lrb;
+                  color: $white;
+            }
+      }
+      .m_body {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            .bg {
+                  background: url(../Images/patternImg.png) no-repeat $orange;
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 100%;
+                  height: 80%;
+                  z-index: -1;
+                  border-radius: 30px;
+            }
+            .box {
+                  width: 85%;
+                  margin: auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  .txt {
+                        width: 50%;
+                        padding-right: 50px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        .lft {
+                              width: 120px;
+                              span {
+                                    width: 100%;
+                                    height: 120px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font: 60px/60px $pb;
+                                    color: $white;
+                                    position: relative;
+                                    &::before {
+                                          content: "";
+                                          background-color: #fff;
+                                          opacity: .3;
+                                          border-radius: .9375rem;
+                                          width: 100%;
+                                          height: 100%;
+                                          position: absolute;
+                                          top: 0;
+                                          left: 0;
+                                          transform: rotate(45deg);
+                                    }
+                              }
+                        }
+                        .rft {
+                              width: calc(100% - 120px);
+                              span {
+                                    font: 18px/24px $pr;
+                                    color: $white;
+                              }
+                              h3 {
+                                    font: 36px/40px $pb;
+                                    color: $white;
+                                    margin: 15px 0;
+                              }
+                              h4 {
+                                    font: 22px/24px $pm;
+                                    color: $white;
+                              }
+                              p {
+                                    font: 15px/24px $pr;
+                                    color: #dbdbdb;
+                                    margin: 15px 0 0;
+                              }
+                        }
+                  }
+                  .img {
+                        width: 50%;
+                        img {
+                              width: 100%;
+                              height: 550px;
+                              object-fit: cover;
+                              object-position: center;
+                              border-radius: 25px;
+                        }
+                  }
+            }
+      }
+}
+/*MY WORK*/
+
+/*EDUCATION*/
+section#education {
+      width: 100%;
+      padding: 150px 0;
+      .e_head {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 100px;
+            z-index: 1;
+            position: relative;
+            h2 {
+                  font: 50px/50px $lrb;
+                  color: $orange;
+            }
+      }
+      .e_body {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .rft {
+                  width: 50%;
+                  img {
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                  }
+            }
+            .lft {
+                  width: 50%;
+                  padding-right: 50px;
+                  .box {
+                        width: 100%;
+                        height: 200px;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        justify-content: center;
+                        background: url(../Images/patternImg.png) no-repeat center $white;
+                        background-size: cover;
+                        padding: 30px;
+                        border-radius: 30px;
+                        position: relative;
+                        box-shadow: 10px 10px 5px 0 #e1e1e1;
+                        &:not(:last-child) {
+                              margin-bottom: 50px;
+                        }
+                        &:nth-child(2) {
+                              background-color: $orange;
+                              background-size: cover;
+                              span {
+                                    color: $orange;
+                                    background: $white;
+                              }
+                              h4, p {
+                                    color: $white;
+                              }
+                        }
+                        h4 {
+                              font: 24px/24px $pb;
+                              color: #171c22;
+                              margin-bottom: 15px;
+                        }
+                        p {
+                              font: 18px/24px $pr;
+                              color: #171c22;
+                        }
+                        span {
+                              position: absolute;
+                              background: $orange;
+                              color: $white;
+                              font: 20px/24px $pm;
+                              padding: 10px 15px;
+                              transform: rotate(90deg);
+                              right: -50px;
+                              top: 78px;
+                              border-radius: 10px;
+                        }
+                  }
+            }
+      }
+}
+/*EDUCATION*/
+
+/*SKILLS*/
+section#skills {
+      width: 100%;
+      padding: 150px 0;
+      border-radius: 0 100px 0 100px;
+      background: url(../Images/skill_bg.jpg) no-repeat center;
+      background-size: cover;
+      position: relative;
+      &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0 100px 0 100px;
+            background: rgba(247, 80, 35, 0.95);
+      }
+      .s_head {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 100px;
+            z-index: 1;
+            position: relative;
+            h2 {
+                  font: 50px/50px $lrb;
+                  color: $white;
+            }
+      }
+      .s_body {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: initial;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box {
+                  width: 18%;
+                  background: url(../Images/patternImg.png) no-repeat center $white;
+                  background-size: cover;
+                  border-radius: 30px;
+                  padding: 25px;
+                  border: 5px solid #f7f0fe;
+                  margin-bottom: 30px;
+                  box-shadow: 10px 10px 10px 0 #b15036;
+                  .img {
+                        width: 70px;
+                        height: 70px;
+                        background: $white;
+                        border-radius: 20px;
+                        border: 5px solid #f7f0fe;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                              width: 40px;
+                              object-fit: contain;
+                              object-position: center;
+                              border-radius: 10px;
+                        }
+                  }
+                  .txt {
+                        width: 100%;
+                        margin: 15px 0 25px;
+                        h4 {
+                              font: 16px/24px $pb;
+                              color: #171c22;
+                        }
+                  }
+                  .bar {
+                        width: 100%;
+                        height: 7px;
+                        background: #ede5f6;
+                        border-radius: 10px;
+                        position: relative;
+                        .bg_accent {
+                              background: $orange;
+                              height: 7px;
+                              border-radius: 10px;
+                              span {
+                                    width: 60px;
+                                    height: 30px;
+                                    background: $orange;
+                                    border-radius: 10px;
+                                    position: absolute;
+                                    font: 14px/14px $pr;
+                                    color: $white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                              }
+                        }
+                  }
+            }
+      }
+}
+/*SKILLS*/
 
 /*FOOTER*/
 .footer {
@@ -647,20 +956,102 @@ section#contact {
       padding: 50px 0;
       text-align: center;
       background: $orange;
+
       .ft_logo {
             width: 100%;
             margin-bottom: 20px;
+
             img {
                   max-width: 100px;
                   object-fit: contain;
                   object-position: center;
             }
       }
+
       .ft_txt {
             p {
                   font: 16px/24px $pr;
                   color: $white;
                   letter-spacing: 5px;
+            }
+      }
+
+      .social_media {
+            ul {
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+
+                  li {
+                        &:not(:last-child) {
+                              margin-right: 20px;
+                        }
+
+                        a {
+                              font-size: 20px;
+                              width: 35px;
+                              height: 35px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              transition: 0.5s all ease-in-out;
+                              border-radius: 100%;
+                              position: relative;
+                              color: $white;
+                              box-shadow: 0 0 5px 0 #2c2d32;
+
+                              svg {
+                                    z-index: 1;
+                              }
+
+                              &::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin: auto;
+                                    vertical-align: middle;
+                                    width: 100%;
+                                    height: 100%;
+                                    transform: scale(0);
+                                    background: $white;
+                                    border-radius: 100%;
+                                    z-index: 0;
+                              }
+
+                              &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    border-radius: 100%;
+                                    background: $orange;
+                                    z-index: 0;
+                              }
+
+                              &:hover {
+                                    color: $orange;
+                                    animation-name: bubble2;
+                                    animation-duration: 0.5s;
+                                    animation-delay: 0.1s;
+                                    animation-fill-mode: forwards;
+
+                                    svg {
+                                          color: $orange;
+                                    }
+
+                                    &::after {
+                                          animation-name: bubble;
+                                          animation-duration: 0.5s;
+                                          animation-fill-mode: forwards;
+                                    }
+                              }
+                        }
+                  }
             }
       }
 }

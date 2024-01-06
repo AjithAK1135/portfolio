@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaTelegramPlane } from "react-icons/fa";
+
 
     
 const Header = () => {
@@ -46,32 +46,10 @@ const Header = () => {
                                                 </li>
                                           </ul>
                                     </div>
-                                    <div className="social_media">
+                                    <div className="download_cv">
                                           <ul>
                                                 <li>
-                                                      <a href="#">
-                                                            <FaFacebookF />
-                                                      </a>
-                                                </li>
-                                                <li>
-                                                      <a href="#">
-                                                            <FaInstagram />
-                                                      </a>
-                                                </li>
-                                                <li>
-                                                      <a href="#">
-                                                            <FaLinkedinIn />
-                                                      </a>
-                                                </li>
-                                                <li>
-                                                      <a href="#">
-                                                            <FaPinterestP />
-                                                      </a>
-                                                </li>
-                                                <li>
-                                                      <a href="#">
-                                                            <FaTelegramPlane />
-                                                      </a>
+                                                      <a href="#">Download CV</a>
                                                 </li>
                                           </ul>
                                     </div>
