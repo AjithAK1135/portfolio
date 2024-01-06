@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.48c541c6.css",
-    "main.js": "/portfolio/static/js/main.577275c3.js",
+    "main.css": "/portfolio/static/css/main.4ec809da.css",
+    "main.js": "/portfolio/static/js/main.96138a1d.js",
     "static/js/787.a5fa54f9.chunk.js": "/portfolio/static/js/787.a5fa54f9.chunk.js",
+    "static/media/work_img.jpg": "/portfolio/static/media/work_img.bd94ff94a998392f1f52.jpg",
+    "static/media/skill_bg.jpg": "/portfolio/static/media/skill_bg.d12e6d90573eae2f944a.jpg",
     "static/media/banner.jpg": "/portfolio/static/media/banner.f5805e42188443162d5b.jpg",
+    "static/media/mywork_bg.jpg": "/portfolio/static/media/mywork_bg.184cf5586d75093b82d0.jpg",
+    "static/media/patternImg.png": "/portfolio/static/media/patternImg.e76d4bf6bbbb53d32da5.png",
     "static/media/contact_img.png": "/portfolio/static/media/contact_img.12c3b5c885eab5397b7f.png",
     "static/media/LeviReBrushed.woff": "/portfolio/static/media/LeviReBrushed.7d2cd5c12baf94cbb114.woff",
+    "static/media/education_img.png": "/portfolio/static/media/education_img.b83e5382569fb604d29d.png",
     "static/media/about_img.png": "/portfolio/static/media/about_img.dcb5b0bb9a0ae21a00b5.png",
     "static/media/avatar.png": "/portfolio/static/media/avatar.d1cecb49e23a6c3c74b9.png",
     "static/media/Poppins-Regular.woff": "/portfolio/static/media/Poppins-Regular.387f9003f984ef1cec60.woff",
@@ -13,15 +18,15 @@
     "static/media/Poppins-SemiBold.woff": "/portfolio/static/media/Poppins-SemiBold.71da8e4f0d76b718897c.woff",
     "static/media/Poppins-Medium.woff": "/portfolio/static/media/Poppins-Medium.7e588a26bdac2428f240.woff",
     "static/media/Poppins-Bold.woff": "/portfolio/static/media/Poppins-Bold.a6b628bdef91e927b77c.woff",
-    "static/media/Ak_logo.png": "/portfolio/static/media/Ak_logo.fcc52c1fba747ba82896.png",
+    "static/media/Ak_logo.png": "/portfolio/static/media/Ak_logo.8d1c34a84bce00e0a812.png",
     "static/media/Ak_logo_w.png": "/portfolio/static/media/Ak_logo_w.5210f8cc620e59053adf.png",
     "index.html": "/portfolio/index.html",
-    "main.48c541c6.css.map": "/portfolio/static/css/main.48c541c6.css.map",
-    "main.577275c3.js.map": "/portfolio/static/js/main.577275c3.js.map",
+    "main.4ec809da.css.map": "/portfolio/static/css/main.4ec809da.css.map",
+    "main.96138a1d.js.map": "/portfolio/static/js/main.96138a1d.js.map",
     "787.a5fa54f9.chunk.js.map": "/portfolio/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c541c6.css",
-    "static/js/main.577275c3.js"
+    "static/css/main.4ec809da.css",
+    "static/js/main.96138a1d.js"
   ]
 }
