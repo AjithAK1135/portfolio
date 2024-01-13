@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaTelegramPlane, FaBehance  } from "react-icons/fa";
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
                                           <h1>Ajithkumar</h1>
                                           <p>A <span>UI/UX Designer & Developer</span> From <span>India</span></p>
                                           <p>I'm UI developer based in India, and I'm very passionate and dedicated to my work.</p>
-                                          <a className="abt_btn" href="#">About Me</a>
+                                          <a className="abt_btn" href="#about">About Me</a>
                                     </div>
                                     <div className="ban_img">
                                           <img src={require('../../Assets/Images/avatar.png')} />
@@ -93,7 +94,7 @@ const Home = () => {
                                                       <span>1</span>
                                                 </div>
                                                 <div className="rft">
-                                                      <span>Jab 2022 - Present</span>
+                                                      <span>Jan 2022 - Present</span>
                                                       <h3>UI Developer</h3>
                                                       <h4>Blaze Web services PVT LTD</h4>
                                                       <p>I design interactive static web templates with ReactJS, AngularJS, HTML, CSS, SCSS, Java script and jQuery. Have the ability to create mobile friendly web pages with and without Bootstrap. and also create mobile app ui design in Reactnative. I design website logos, websitebanners, socialmediabanners, card design and website design using photoshop.</p>
@@ -119,12 +120,12 @@ const Home = () => {
                                                 <span>Graduated on 2017</span>
                                           </div>
                                           <div className="box">
-                                                <h4>Mangayarkarasi Higher Secondary School</h4>
+                                                <h4>Mangayarkarasi Higher <br /> Secondary School</h4>
                                                 <p>HSC -64.66%</p>
                                                 <span>Graduated on 2014</span>
                                           </div>
                                           <div className="box">
-                                                <h4>Mangayarkarasi Higher Secondary School</h4>
+                                                <h4>Mangayarkarasi Higher <br /> Secondary School</h4>
                                                 <p>SSLC-77.4%</p>
                                                 <span>Graduated on 2012</span>
                                           </div>
@@ -136,6 +137,8 @@ const Home = () => {
                         </div>
                   </section>
                   <section id="skills">
+                        <div className="top_bar"></div>
+                        <div className="bot_bar"></div>
                         <div className="container">
                               <div className="s_head">
                                     <h2>My Skill & Advantage</h2>
@@ -149,7 +152,7 @@ const Home = () => {
                                                 <h4>HTML5</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"86%"}}>
+                                                <div className="bg_accent" style={{ width: "86%" }}>
                                                       <span>86%</span>
                                                 </div>
                                           </div>
@@ -162,7 +165,7 @@ const Home = () => {
                                                 <h4>CSS3</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"90%"}}>
+                                                <div className="bg_accent" style={{ width: "90%" }}>
                                                       <span>90%</span>
                                                 </div>
                                           </div>
@@ -175,7 +178,7 @@ const Home = () => {
                                                 <h4>SCSS</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"70%"}}>
+                                                <div className="bg_accent" style={{ width: "70%" }}>
                                                       <span>70%</span>
                                                 </div>
                                           </div>
@@ -188,7 +191,7 @@ const Home = () => {
                                                 <h4>JavaScript / jQuery</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"78%"}}>
+                                                <div className="bg_accent" style={{ width: "78%" }}>
                                                       <span>78%</span>
                                                 </div>
                                           </div>
@@ -201,7 +204,7 @@ const Home = () => {
                                                 <h4>Bootstrap</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"80%"}}>
+                                                <div className="bg_accent" style={{ width: "80%" }}>
                                                       <span>80%</span>
                                                 </div>
                                           </div>
@@ -214,7 +217,7 @@ const Home = () => {
                                                 <h4>WordPress</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"70%"}}>
+                                                <div className="bg_accent" style={{ width: "70%" }}>
                                                       <span>70%</span>
                                                 </div>
                                           </div>
@@ -227,7 +230,7 @@ const Home = () => {
                                                 <h4>React Js / React Native</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"60%"}}>
+                                                <div className="bg_accent" style={{ width: "60%" }}>
                                                       <span>60%</span>
                                                 </div>
                                           </div>
@@ -240,7 +243,7 @@ const Home = () => {
                                                 <h4>Angular Js</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"60%"}}>
+                                                <div className="bg_accent" style={{ width: "60%" }}>
                                                       <span>60%</span>
                                                 </div>
                                           </div>
@@ -253,7 +256,7 @@ const Home = () => {
                                                 <h4>photoshop</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"60%"}}>
+                                                <div className="bg_accent" style={{ width: "60%" }}>
                                                       <span>60%</span>
                                                 </div>
                                           </div>
@@ -266,8 +269,141 @@ const Home = () => {
                                                 <h4>Figma</h4>
                                           </div>
                                           <div className="bar">
-                                                <div className="bg_accent" style={{width:"50%"}}>
+                                                <div className="bg_accent" style={{ width: "50%" }}>
                                                       <span>50%</span>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+                  <section id="works">
+                        <div className="container">
+                              <div className="w_head">
+                                    <h2>My Amazing Works</h2>
+                              </div>
+                              <div className="w_body">
+                                    <div className="work_blk">
+                                          <div className="work_list">
+                                                <div className="box">
+                                                      <img src={require('../../Assets/Images/work/1.jpg')} />
+                                                      <div className="details">
+                                                            <h4>Tatile</h4>
+                                                            <a href="#">
+                                                                  <img src={require('../../Assets/Images/external-link.png')} />
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div className="box">
+                                                      <img src={require('../../Assets/Images/work/2.jpg')} />
+                                                      <div className="details">
+                                                            <h4>Tatile</h4>
+                                                            <a href="#">
+                                                                  <img src={require('../../Assets/Images/external-link.png')} />
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div className="work_list">
+                                                <div className="box">
+                                                      <img src={require('../../Assets/Images/work/3.jpg')} />
+                                                      <div className="details">
+                                                            <h4>Tatile</h4>
+                                                            <a href="#">
+                                                                  <img src={require('../../Assets/Images/external-link.png')} />
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div className="box">
+                                                      <img src={require('../../Assets/Images/work/4.jpg')} />
+                                                      <div className="details">
+                                                            <h4>Tatile</h4>
+                                                            <a href="#">
+                                                                  <img src={require('../../Assets/Images/external-link.png')} />
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div className="work_list">
+                                                <div className="box">
+                                                      <img src={require('../../Assets/Images/work/5.jpg')} />
+                                                      <div className="details">
+                                                            <h4>Tatile</h4>
+                                                            <a href="#">
+                                                                  <img src={require('../../Assets/Images/external-link.png')} />
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div className="box d-grid gap{1.875rem}">
+                                                      <div className="box">
+                                                            <img src={require('../../Assets/Images/work/6.jpg')} />
+                                                            <div className="details">
+                                                                  <h4>Tatile</h4>
+                                                                  <a href="#">
+                                                                        <img src={require('../../Assets/Images/external-link.png')} />
+                                                                  </a>
+                                                            </div>
+                                                      </div>
+                                                      <div className="box">
+                                                            <img src={require('../../Assets/Images/work/7.jpg')} />
+                                                            <div className="details">
+                                                                  <h4>Tatile</h4>
+                                                                  <a href="#">
+                                                                        <img src={require('../../Assets/Images/external-link.png')} />
+                                                                  </a>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div className="more">
+                                          <p>Want to see my professional work. <a href="#">Click here to View More</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+                  <section id="my_port">
+                        <div className="container">
+                              <div className="row">
+                                    <div className="col-md-4">
+                                          <div className="box">
+                                                <div className="icon">
+                                                      <FaBehance />
+                                                </div>
+                                                <div className="txt">
+                                                      <h4>Behance</h4>
+                                                      <a href="https://www.behance.net/jithak" target="_blank">
+                                                            <span class="link__label">CHECK NOW</span>
+                                                            <span class="link__icon"></span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                          <div className="box">
+                                                <div className="icon">
+                                                      <FaPinterestP />
+                                                </div>
+                                                <div className="txt">
+                                                      <h4>Pinterest</h4>
+                                                      <a href="https://in.pinterest.com/AjithAK1135/" target="_blank">
+                                                            <span class="link__label">CHECK NOW</span>
+                                                            <span class="link__icon"></span>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                          <div className="box">
+                                                <div className="icon">
+                                                      <FaTelegramPlane />
+                                                </div>
+                                                <div className="txt">
+                                                      <h4>Telegram</h4>
+                                                      <a href="https://@Ajith_Ak1135.t.me/" target="_blank">
+                                                            <span class="link__label">GET IN TOUCH</span>
+                                                            <span class="link__icon"></span>
+                                                      </a>
                                                 </div>
                                           </div>
                                     </div>
@@ -277,20 +413,50 @@ const Home = () => {
                   <section id="contact">
                         <div className="container">
                               <div className="c_head">
-                                    <h2>Contact</h2>
+                                    <h2>Contact Me</h2>
                               </div>
                               <div className="c_body">
                                     <div className="c_txt">
                                           <ul>
                                                 <li>
-                                                      <span>Email:</span>
-                                                      <a href="mailto:ajithkumar1135@gmail.com">ajithkumar1135@gmail.com</a>
+                                                      <div className="img">
+                                                            <img src={require('../../Assets/Images/mail.png')} />
+                                                      </div>
+                                                      <div className="txt">
+                                                            <span>Email:</span>
+                                                            <a href="mailto:ajithkumar1135@gmail.com">ajithkumar1135@gmail.com</a>
+                                                      </div>
                                                 </li>
                                                 <li>
-                                                      <span>Mobile Number:</span>
-                                                      <a href="tel:8608831135">8608831135</a>
+                                                      <div className="img">
+                                                            <img src={require('../../Assets/Images/call.png')} />
+                                                      </div>
+                                                      <div className="txt">
+                                                            <span>Mobile Number:</span>
+                                                            <a href="tel:8608831135">8608831135</a>
+                                                      </div>
                                                 </li>
                                           </ul>
+                                          <div className="social_media">
+                                                <h4>Follow Me:</h4>
+                                                <ul>
+                                                      {/* <li>
+                                                            <a href="#" target="_blank">
+                                                                  <FaFacebookF />
+                                                            </a>
+                                                      </li> */}
+                                                      <li>
+                                                            <a href="https://www.instagram.com/_a_jit_h/" target="_blank">
+                                                                  <FaInstagram />
+                                                            </a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="https://www.linkedin.com/in/ajith-kumar-976a561b9" target="_blank">
+                                                                  <FaLinkedinIn />
+                                                            </a>
+                                                      </li>
+                                                </ul>
+                                          </div>
                                     </div>
                                     <div className="c_img">
                                           <img src={require('../../Assets/Images/contact_img.png')} />

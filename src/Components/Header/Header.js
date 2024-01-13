@@ -29,27 +29,27 @@ const Header = () => {
                               <div className="menus">
                                     <div className="menu_list">
                                           <ul>
-                                                <li className="active">
+                                                <li>
                                                       <a href="#">Home</a>
                                                 </li>
                                                 <li>
-                                                      <a href="#">About</a>
+                                                      <a href="#about">About</a>
                                                 </li>
                                                 <li>
-                                                      <a href="#">Skills</a>
+                                                      <a href="#skills">Skills</a>
                                                 </li>
                                                 <li>
-                                                      <a href="#">Work</a>
+                                                      <a href="#works">Work</a>
                                                 </li>
                                                  <li>
-                                                      <a href="#">Contact</a>
+                                                      <a href="#contact">Contact</a>
                                                 </li>
                                           </ul>
                                     </div>
                                     <div className="download_cv">
                                           <ul>
                                                 <li>
-                                                      <a href="#">Download CV</a>
+                                                      <a href="https://drive.google.com/file/d/1-uo_G4i3lb6kiC1j-9RE8NoN2PYFX1oU/view?usp=sharing" target="_blank" type="application/octet-stream" download="Ajith_Resume.pdf">Download CV</a>
                                                 </li>
                                           </ul>
                                     </div>
